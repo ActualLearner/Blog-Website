@@ -1,11 +1,11 @@
 <%- include("./partials/header.ejs") %>
 
     <div class="px-4 py-5 my-5 text-center">
-        <img class="d-block mx-auto mb-4"
+        <img class="d-block mx-auto mb-3 mt-5"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCrFOwXMiAfZIgWRslfwvO611SUuhoZ6JrOg&s" alt=""
             width="200" height="200">
         <h1 class="display-5 fw-bold">SimpleBlogs</h1>
-        <div class="col-lg-6 mx-auto">
+        <div class="col-lg-6 mx-auto mb-5">
             <p class="lead mb-4">Write or read, it’s all the same, fueling the mind with a passionate flame</p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                 <a href="#write"><button type="button" class="btn btn-dark btn-lg px-4 gap-3">Write
@@ -19,17 +19,17 @@
 
     <div id="write" class="pt-4 my-5 mx-auto w-50 border border-3 border-black rounded" style="height: 75vh">
         <h1 class="ms-5 mt-4">Write your blog</h1>
-        <form action="/" method="POST" class="h-100">
+        <form action="/" method="POST" class="h-50" style="min-height: 400px;">
             <div class="my-3 ms-5 me-auto w-75">
                 <label for="title" class="form-label">Blog Title</label>
-                <input type="text" class="form-control" id="title" name="title" placeholder="Example title">
+                <input type="text" class="form-control border-black" id="title" name="title" placeholder="Example title">
             </div>
-            <div class="my-3 ms-5 me-auto w-75 h-25">
+            <div class="mb-5 mt-3 ms-5 w-75 h-25">
                 <label for="content" class="form-label">Content</label>
-                <textarea class="form-control h-100" id="content" name="content"></textarea>
+                <textarea class="form-control h-100 border-black" id="content" name="content"></textarea>
             </div>
 
-            <input type="submit" class="mt-5 ms-5 mb-3 w-25 btn btn-outline-dark">
+            <input type="submit" class="mt-4 ms-5 mb-3 w-25 btn btn-outline-dark">
         </form>
     </div>
 
