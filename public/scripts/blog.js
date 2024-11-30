@@ -27,8 +27,7 @@ deleteBtn.addEventListener("click", async () => {
 });
 
 
-document.getElementById('updateButton').addEventListener('click', async (event) => {
-  event.preventDefault();
+document.getElementById('updateButton').addEventListener('click', async () => {
 
   const url = `/${id}`;
   const title = document.getElementById('title').value;
