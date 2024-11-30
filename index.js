@@ -3,7 +3,6 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const app = express();
-const port = 3000;
 const __filename = fileURLToPath(import.meta.url); // Get the current file's URL
 const __dirname = path.dirname(__filename); // Get the current directory name
 
@@ -68,6 +67,6 @@ app.delete("/:id", (req, res) => {
     }
 })
 
-app.listen(port, () => {
-    console.log(`Server listening on port ${port}`);
+app.listen(process.env.PORT, () => {
+    console.log(`Server listening on port ${process.env.PORT}`);
 })
