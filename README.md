@@ -6,7 +6,7 @@ SimpleBlogs is a blog website that allows the basic CRUD operations. I built thi
 
 **Tech used:** HTML, CSS, JavaScript, EJS, NodeJS and ExpressJS
 
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write *something*. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
+Building this was quite simple. Started with 2 pages, incorporated the backend, and fixed bugs relating to requests & responses.
 
 ## Optimizations
 This is a beginner project, but there’s always room for improvement! Some potential optimizations include:
