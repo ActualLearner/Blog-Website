@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.js",  // Your entry point (e.g., your Express server file)
-      "use": "@vercel/node"  // Tells Vercel to use the Node.js environment
+      "src": "index.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",   // This routes all requests to the server
-      "dest": "index.js"  // Your entry point (Express app will handle the routes)
+      "src": "/(.*)",
+      "dest": "index.js"
     }
   ]
 }
