@@ -30,8 +30,7 @@ deleteBtn.addEventListener("click", async () => {
 document.getElementById('updateForm').addEventListener('submit', async (event) => {
   event.preventDefault();
 
-  const form = event.target;
-  const url = form.action; // "/<%= blog.id %>"
+  const url = `/${id}`;
   const title = document.getElementById('title').value;
   const content = document.getElementById('content').value;
 
