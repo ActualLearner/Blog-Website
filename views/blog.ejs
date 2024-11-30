@@ -9,12 +9,12 @@
                 </h2>
                 <p class="content mt-3" data-id="<%= blog.id %>">
                     <%= blog.content %>
-
-                        <div class="d-flex justify-content-end">
-                            <button class="update btn btn-secondary mt-5 ms-2" data-bs-toggle="modal"
-                                data-bs-target="#updateModal">Update</button>
-                            <button class="delete btn btn-danger mt-5 ms-2">Delete</button>
-                        </div>
+                </p>
+                <div class="d-flex justify-content-end">
+                    <button class="update btn btn-secondary mt-5 ms-2" data-bs-toggle="modal"
+                        data-bs-target="#updateModal">Update</button>
+                    <button class="delete btn btn-danger mt-5 ms-2">Delete</button>
+                </div>
             </div>
 
             <% } %>
@@ -31,7 +31,7 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <form action="/<%= blog.id %>" id="updateForm">
+                                <form id="updateForm">
                                     <div class="mb-3">
                                         <label for="title" class="form-label">Title:</label>
                                         <input type="text" class="form-control" id="title" name="title" required>
@@ -45,7 +45,8 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="submit" form="updateForm" class="btn btn-primary">Submit</button>
+                                <button id="updateButton" type="submit" form="updateForm"
+                                    class="btn btn-primary">Submit</button>
                             </div>
                         </div>
                     </div>
